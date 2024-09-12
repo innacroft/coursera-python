@@ -1,0 +1,43 @@
+Pytest
+Es una herramienta que asiste a los programadores para escribir programas más efectivos y estables. Ayuda a escribir , organizar y ejecutar tests.
+Se pueden hacer distintas clases de testing como : integracion, end-to-end y tests funcionales.
+
+*Como escribir tests?*
+Pytest usa una operacion llamada assert(), esta asegura que cierta condición o suposición se mantenga verdadera durante la ejecución, de lo contrario y si se ejecuta como falsa puede indicar un error o un bug en el código.
+*Pytest fixtures*
+Son piezas de configuracion en tests, teardown code(codigo que se usa para psteriormente destruir - liberar un objeto luego de crear un test)
+
+Unitests
+ Es  una herramienta construida directamente en python:
+- Detectan automáticamente los casos de testion pero deben ser llamados directamente desde la linea de comandos
+- Usan un enfoque de programación orientada a objetos en el momento de escribir tests
+- Proveen tambien métodos especiales de afirmación (assertEqual, assertTrue)
+Pytests:
+- Son ejecutados de manera automática usando el prefijo test
+- Usan un enfoque funcional
+- Usan declaraciones de afirmación incorporadas (assert) haciendolo más legible y más sencillo a la hora de escribir tests.
+
+Unit tests:
+Usados para verificar esas pequeñas y aisladas partes de un programa sean correctas.
+Se utilizan para probar pequeñas partes como funciones o métodos y así asegurar que cada parte del código funciona correctamente.
+No deben afectar el ambiente de producción normalmente debe existir un ambiente aislado llamado ambiente para test.
+
+Casos Borde:
+Entradas del codigo que producen resultados inesperados, y se encuentran en los extremosde rangos o en la entradas queimaginamos que nuestros programas funcionan normalmente.
+
+*White box tests*
+Tests donde el creador realiza los tests casea a partir de lo que sabe del softare.
+*Black box tests*
+Se posee conocimiento de que hace el programa -requerimientos y especificaciones- pero no como lo hace.
+*Rregresion tests*
+Corregir un bug y ejecutar de nuevo el tests donde estaba fallando, esto evita que el bug no suceda varias veces
+*Smoke tests*
+Con este tipo de tests se  descubre si el programa puede ejecutarse en su forma básica antes de someterse a casos de prueba más refinados.
+*tests de carga*
+Tests para probar tráfico de la aplicacion o cargas de desempeño.
+
+*Test suite*
+Un conjunto de varios tipos de testing
+
+*TDD* TEST DRIVEN DEVELOPMENT
+Se escribe antes de escribir el código, escenarios de prueba.
